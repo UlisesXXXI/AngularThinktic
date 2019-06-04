@@ -2,10 +2,10 @@
   <li *ngFor="let todo of todos">
         {{todo.text}}
   </li>
+</ul>
 
   <h4>Añadir tarea</h4>
  <form (submit)="addTodo()" >
  <input type="text" [(ngModel)]="todoText"
     [ngModelOptions]="{standalone: true}"/>
  </form>
-</ul>

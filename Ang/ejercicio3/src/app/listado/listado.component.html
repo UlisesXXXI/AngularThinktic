@@ -1,0 +1,15 @@
+<h3>Componente listado</h3>
+
+<form (submit)="addElemento()">
+  <label>texto:</label>
+  <!-- <input [(ngModel)]="elementoLista" [ngModelOptions]="{standalone: true}"/> -->
+<input type="text" [(ngModel)]="elementoLista" [ngModelOptions]="{standalone: true}">
+</form>
+
+
+
+<ul>
+  <li *ngFor="let l of lista">
+    {{l}}
+  </li>
+</ul>

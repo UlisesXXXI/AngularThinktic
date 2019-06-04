@@ -1,0 +1,20 @@
+  <hr>
+  
+  <form (submit)="addHeroe()">
+    <label for="id">Id</label>
+    <input type="text" [(ngModel)]="hero.id" [ngModelOptions] = "{standalone: true}" >
+    <br>
+    <label for="name">Name</label>
+    <input type="text" [(ngModel)]="hero.name" [ngModelOptions] = "{standalone: true}">
+    <hr>
+    <input type="submit" value="enviar"/>
+  </form>
+
+  <h3>Listado de heroes</h3>
+  <ul>
+    <li *ngFor="let h of heroes">
+      {{h | json}}<button (click)="Eliminar(h)">x</button>
+    </li>
+  </ul>
+
+  

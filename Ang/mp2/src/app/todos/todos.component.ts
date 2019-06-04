@@ -12,7 +12,7 @@ export class TodosComponent implements OnInit {
   constructor() { }
 
   addTodo(){
-    todos.push({text:this.todoText});
+    this.todos.push({text:this.todoText});
     this.todoText = "";
     return false;
   }

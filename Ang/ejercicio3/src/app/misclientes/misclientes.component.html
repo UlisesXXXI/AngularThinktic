@@ -1,0 +1,16 @@
+<h3>{{titulo}}</h3>
+
+<form (submit)="addCliente()">
+  <label>nombre:</label>
+  <input type="text" [(ngModel)]="clienteActual.nombre" [ngModelOptions]="{standalone: true}">
+  <label>direccion:</label>
+  <input type="text" [(ngModel)]="clienteActual.direccion" [ngModelOptions]="{standalone: true}">
+  <input type="submit" value="enviar">
+</form>
+
+<hr>
+<ul>
+  <li *ngFor="let cliente of clientes">
+    {{cliente | json}}
+  </li>
+</ul>
