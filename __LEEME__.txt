@@ -1,0 +1,23 @@
+www.cursosdedesarrollo.com/aula
+uer:jim80
+pwd:InTheSky@1980
+
+
+www.update.angular.io
+Cambios que hay entre una versión y otra
+
+
+
+//comandos
+npm install @angular/cli@1.7.4 -> version completa
+
+
+//ng-client
+
+ng serve -> arranca proyecto (instancia en memoria de un servidor en tu pc)
+
+
+
+
+
+
