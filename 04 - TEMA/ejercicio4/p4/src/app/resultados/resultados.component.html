@@ -1,0 +1,7 @@
+<h3>{{titulo}}</h3>
+
+<ul>
+  <li *ngFor="let r of resultados | async">
+    {{r | json}}
+  </li>
+</ul>
